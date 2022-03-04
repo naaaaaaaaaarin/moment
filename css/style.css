@@ -1,0 +1,126 @@
+.hidden {
+    display: none !important;
+}
+
+body {
+    text-align: center;
+}
+#bg::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -998;
+    background-color: rgba(0, 0, 0, .4);
+}
+img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#clock {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 30px 0;
+}
+#login-form input,
+#todo-form input {
+    border: none;
+    background: transparent;
+}
+#login-form input[type="text"] {
+    width: 180px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 4px 10px;
+    opacity: .8;
+}
+#login-form input[type="text"]::placeholder,
+#todo-form input::placeholder {
+    color: #fff;
+    
+}
+#login-form input[type="text"]:focus,
+#todo-form input:focus {
+    outline: none;
+}
+#login-form input[type="submit"] {
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: bold;
+    color: bisque;
+}
+#login-form input[type="submit"]:hover {
+    background-color: rgba(240, 255, 255, .6);
+    border-radius: 4px;
+    color: #000;
+}
+#greeting {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0 30px 0;    
+}
+#todo-form input {
+    width: 150px;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+#todo-list {
+    margin: 14px 0 ;
+}
+#todo-list li {
+    padding: 2px 0; 
+}
+#todo-list span {
+    color: #ccc;
+    margin-right: 10px;
+    
+}
+#todo-list button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 14px;
+    cursor: pointer;
+}
+#quote {
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
+    color: #ccc;
+    font-size: 12px;
+}
+#weather {
+    position: fixed;
+    color: #ccc;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+}
+#weather span:first-child{
+    margin-right: 6px;
+    font-weight: bold;
+
+}
